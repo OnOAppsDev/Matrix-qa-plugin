@@ -54,8 +54,6 @@ if (!/^\d+\.\d+\.\d+$/.test(manifest.version ?? "")) err("plugin.json", "version
 const changelogTop = /^## \[(\d+\.\d+\.\d+)\]/m.exec(exists("CHANGELOG.md") ? read("CHANGELOG.md") : "")?.[1];
 if (changelogTop !== manifest.version) err("CHANGELOG.md", `latest entry ${changelogTop ?? "(none)"} does not match plugin.json version ${manifest.version}`);
 if (exists("package.json") && JSON.parse(read("package.json")).version !== manifest.version) err("package.json", "version does not match plugin.json");
-const listed = exists(".claude-plugin/marketplace.json") && JSON.parse(read(".claude-plugin/marketplace.json")).plugins?.find((p) => p.name === manifest.name);
-if (listed && listed.version !== manifest.version) err("marketplace.json", "version does not match plugin.json");
 for (const k of ["commands", "agents", "hooks"]) if (manifest[k]) notes.push(`plugin.json declares "${k}"; default folders are expected instead`);
 
 // ---------------------------------------------------------------- components

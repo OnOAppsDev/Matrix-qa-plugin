@@ -204,4 +204,4 @@ node --test scripts/test/               # unit tests: config, plan format and st
 node scripts/e2e-example.mjs            # fresh QA repo from templates + example feature + real Playwright runs (needs npm network access and browsers)
 ```
 
-Versioning follows [Semantic Versioning](https://semver.org/); keep `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, `package.json` and the top entry of [CHANGELOG.md](CHANGELOG.md) in sync (the validator checks it).
+Versioning follows [Semantic Versioning](https://semver.org/); keep `.claude-plugin/plugin.json`, `package.json` and the top entry of [CHANGELOG.md](CHANGELOG.md) in sync (the validator checks it).
