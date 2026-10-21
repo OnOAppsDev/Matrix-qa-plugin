@@ -22,14 +22,14 @@ Principles: **LLD-first** (Figma shows what the user sees, source code is eviden
 
 ## Installation
 
-**From GitHub** (persistent; the repository is its own marketplace, `.claude-plugin/marketplace.json`). It is private, so the git account on your machine needs read access:
+**From the Ono plugin marketplace** (persistent; the marketplace tracks this repository's `main` branch):
 
 ```bash
-claude plugin marketplace add OnOAppsDev/Matrix-qa-plugin
-claude plugin install matrix-qa-plugin@matrix-qa
+claude plugin marketplace add OnOAppsDev/ono-plugin-marketplace
+claude plugin install matrix-qa-plugin@ono-plugin-marketplace
 ```
 
-Updates: `claude plugin marketplace update matrix-qa`, then restart Claude Code. Inside a session, `/plugin` does the same interactively.
+Updates: `claude plugin marketplace update ono-plugin-marketplace`, then restart Claude Code. Inside a session, `/plugin` does the same interactively.
 
 **From a local clone** (one session, for trying it out or developing):
 
@@ -37,7 +37,7 @@ Updates: `claude plugin marketplace update matrix-qa`, then restart Claude Code.
 claude --plugin-dir /path/to/Matrix-qa-plugin
 ```
 
-Commands are available as `/qa-plan` or, fully qualified, `/matrix-qa-plugin:qa-plan`. The plugin is independent of the ONO plugins.
+Commands are available as `/qa-plan` or, fully qualified, `/matrix-qa-plugin:qa-plan`. The plugin does not depend on any other plugin in the marketplace.
 
 ## Quick start
 
