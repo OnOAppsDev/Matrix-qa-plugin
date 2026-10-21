@@ -1,0 +1,28 @@
+{
+  "name": "matrix-qa-plugin",
+  "displayName": "Matrix QA",
+  "description": "LLD-first web QA for Matrix IT: manual test plan generation from the LLD and optional Figma design, independent review, explicit approval, LLD change sync with impact analysis, and standard Playwright TypeScript automation (Page Object Model) with run and failure analysis.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Matrix IT QA"
+  },
+  "homepage": "https://github.com/OnOAppsDev/Matrix-qa-plugin",
+  "repository": "https://github.com/OnOAppsDev/Matrix-qa-plugin",
+  "license": "UNLICENSED",
+  "keywords": [
+    "qa",
+    "playwright",
+    "typescript",
+    "test-cases",
+    "lld",
+    "traceability",
+    "figma",
+    "web"
+  ],
+  "mcpServers": {
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
+    }
+  }
+}

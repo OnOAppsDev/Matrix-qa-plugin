@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head><meta charset="utf-8"><title>התחברות</title></head>
+<body>
+<main>
+  <h1>התחברות</h1>
+  <form id="login" novalidate>
+    <p><label for="email">דוא"ל</label> <input id="email" name="email" type="email" autocomplete="username"></p>
+    <p><label for="password">סיסמה</label> <input id="password" name="password" type="password" autocomplete="current-password">
+       <button type="button" id="toggle" aria-pressed="false">הצג סיסמה</button></p>
+    <p><label><input type="checkbox" id="remember"> זכור אותי</label></p>
+    <p><button type="submit">התחברות</button></p>
+    <div id="error" role="alert" hidden></div>
+  </form>
+</main>
+<script>
+  const form = document.getElementById('login');
+  const error = document.getElementById('error');
+  const password = document.getElementById('password');
+  const toggle = document.getElementById('toggle');
+  const show = (text) => { error.textContent = text; error.hidden = false; };
+  toggle.addEventListener('click', () => {
+    const visible = password.type === 'password';
+    password.type = visible ? 'text' : 'password';
+    toggle.setAttribute('aria-pressed', String(visible));
+  });
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    error.hidden = true;
+    const email = document.getElementById('email').value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return show('יש להזין כתובת דוא"ל תקינה');
+    if (password.value.length < 8 || password.value.length > 64) return show('הסיסמה חייבת להכיל 8 עד 64 תווים');
+    const res = await fetch('/api/login', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email, password: password.value }) });
+    if (!res.ok) return show((await res.json()).message);
+    sessionStorage.setItem('name', (await res.json()).name);
+    location.assign('/dashboard');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "projectId": "acme-portal",
+  "language": "he",
+  "paths": {
+    "lldDir": "qa/lld",
+    "testCasesDir": "qa/test-cases",
+    "testDir": "tests/e2e",
+    "pagesDir": "tests/pages",
+    "fixturesDir": "tests/fixtures",
+    "appSourcePath": "../acme-portal-app"
+  },
+  "environments": {
+    "dev": { "baseUrl": "https://dev.acme-portal.example.com" },
+    "qa": { "baseUrl": "https://qa.acme-portal.example.com" },
+    "staging": { "baseUrl": "https://staging.acme-portal.example.com" },
+    "production": { "baseUrl": "https://acme-portal.example.com", "protected": true }
+  },
+  "defaultEnvironment": "qa",
+  "browsers": ["chromium", "firefox", "webkit"],
+  "devices": {
+    "mobile-chrome": "Pixel 7",
+    "mobile-safari": "iPhone 15",
+    "tablet": "iPad (gen 7)"
+  },
+  "defaultProjects": ["chromium"]
+}

@@ -1,0 +1,379 @@
+{
+ "config": {
+  "note": "trimmed"
+ },
+ "suites": [
+  {
+   "title": "login.spec.ts",
+   "file": "login.spec.ts",
+   "column": 0,
+   "line": 0,
+   "specs": [],
+   "suites": [
+    {
+     "title": "Login",
+     "file": "login.spec.ts",
+     "line": 10,
+     "column": 6,
+     "specs": [
+      {
+       "title": "LOGIN-TC-001: valid credentials open the dashboard",
+       "ok": true,
+       "tags": [],
+       "tests": [
+        {
+         "timeout": 30000,
+         "annotations": [],
+         "expectedStatus": "passed",
+         "projectId": "chromium",
+         "projectName": "chromium",
+         "results": [
+          {
+           "workerIndex": 0,
+           "parallelIndex": 0,
+           "status": "passed",
+           "duration": 421,
+           "errors": [],
+           "stdout": [],
+           "stderr": [],
+           "retry": 0,
+           "startTime": "2026-10-18T12:56:27.785Z",
+           "annotations": [],
+           "attachments": []
+          }
+         ],
+         "status": "expected"
+        }
+       ],
+       "id": "41d3fd2474a19feb00a1-a9ba7b5a4a77c12b143b",
+       "file": "login.spec.ts",
+       "line": 15,
+       "column": 7
+      },
+      {
+       "title": "LOGIN-TC-002: empty email shows the email validation message",
+       "ok": true,
+       "tags": [],
+       "tests": [
+        {
+         "timeout": 30000,
+         "annotations": [],
+         "expectedStatus": "passed",
+         "projectId": "chromium",
+         "projectName": "chromium",
+         "results": [
+          {
+           "workerIndex": 1,
+           "parallelIndex": 1,
+           "status": "passed",
+           "duration": 412,
+           "errors": [],
+           "stdout": [],
+           "stderr": [],
+           "retry": 0,
+           "startTime": "2026-10-18T12:56:27.786Z",
+           "annotations": [],
+           "attachments": []
+          }
+         ],
+         "status": "expected"
+        }
+       ],
+       "id": "41d3fd2474a19feb00a1-a081d9155fb8dfd832cb",
+       "file": "login.spec.ts",
+       "line": 23,
+       "column": 7
+      },
+      {
+       "title": "LOGIN-TC-003: email without @ shows the email validation message",
+       "ok": true,
+       "tags": [],
+       "tests": [
+        {
+         "timeout": 30000,
+         "annotations": [],
+         "expectedStatus": "passed",
+         "projectId": "chromium",
+         "projectName": "chromium",
+         "results": [
+          {
+           "workerIndex": 2,
+           "parallelIndex": 2,
+           "status": "passed",
+           "duration": 403,
+           "errors": [],
+           "stdout": [],
+           "stderr": [],
+           "retry": 0,
+           "startTime": "2026-10-18T12:56:27.788Z",
+           "annotations": [],
+           "attachments": []
+          }
+         ],
+         "status": "expected"
+        }
+       ],
+       "id": "41d3fd2474a19feb00a1-93dfcbc4d5bd5bff417c",
+       "file": "login.spec.ts",
+       "line": 30,
+       "column": 7
+      },
+      {
+       "title": "LOGIN-TC-004: 7-character password is rejected before submission",
+       "ok": true,
+       "tags": [],
+       "tests": [
+        {
+         "timeout": 30000,
+         "annotations": [],
+         "expectedStatus": "passed",
+         "projectId": "chromium",
+         "projectName": "chromium",
+         "results": [
+          {
+           "workerIndex": 3,
+           "parallelIndex": 3,
+           "status": "passed",
+           "duration": 397,
+           "errors": [],
+           "stdout": [],
+           "stderr": [],
+           "retry": 0,
+           "startTime": "2026-10-18T12:56:27.794Z",
+           "annotations": [],
+           "attachments": []
+          }
+         ],
+         "status": "expected"
+        }
+       ],
+       "id": "41d3fd2474a19feb00a1-6dcb701def78003fee90",
+       "file": "login.spec.ts",
+       "line": 37,
+       "column": 7
+      },
+      {
+       "title": "LOGIN-TC-005: 8-character password passes validation and is submitted",
+       "ok": true,
+       "tags": [],
+       "tests": [
+        {
+         "timeout": 30000,
+         "annotations": [],
+         "expectedStatus": "passed",
+         "projectId": "chromium",
+         "projectName": "chromium",
+         "results": [
+          {
+           "workerIndex": 4,
+           "parallelIndex": 4,
+           "status": "passed",
+           "duration": 400,
+           "errors": [],
+           "stdout": [],
+           "stderr": [],
+           "retry": 0,
+           "startTime": "2026-10-18T12:56:27.789Z",
+           "annotations": [],
+           "attachments": []
+          }
+         ],
+         "status": "expected"
+        }
+       ],
+       "id": "41d3fd2474a19feb00a1-bee8d37a1d42c7d1cb2b",
+       "file": "login.spec.ts",
+       "line": 43,
+       "column": 7
+      },
+      {
+       "title": "LOGIN-TC-006: 65-character password is rejected",
+       "ok": true,
+       "tags": [],
+       "tests": [
+        {
+         "timeout": 30000,
+         "annotations": [],
+         "expectedStatus": "passed",
+         "projectId": "chromium",
+         "projectName": "chromium",
+         "results": [
+          {
+           "workerIndex": 5,
+           "parallelIndex": 5,
+           "status": "passed",
+           "duration": 399,
+           "errors": [],
+           "stdout": [],
+           "stderr": [],
+           "retry": 0,
+           "startTime": "2026-10-18T12:56:27.785Z",
+           "annotations": [],
+           "attachments": []
+          }
+         ],
+         "status": "expected"
+        }
+       ],
+       "id": "41d3fd2474a19feb00a1-fcf34a6b8d2290957961",
+       "file": "login.spec.ts",
+       "line": 49,
+       "column": 7
+      },
+      {
+       "title": "LOGIN-TC-007: wrong password shows the generic credentials message",
+       "ok": false,
+       "tags": [],
+       "tests": [
+        {
+         "timeout": 30000,
+         "annotations": [],
+         "expectedStatus": "passed",
+         "projectId": "chromium",
+         "projectName": "chromium",
+         "results": [
+          {
+           "workerIndex": 6,
+           "parallelIndex": 6,
+           "status": "failed",
+           "duration": 5397,
+           "error": {
+            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m\"\u001b[7mהדוא\\\"ל או \u001b[27mהסיסמה שגוי\u001b[7mים\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"הסיסמה שגוי\u001b[7mה\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    14 × locator resolved to <div id=\"error\" role=\"alert\">הסיסמה שגויה</div>\u001b[22m\n\u001b[2m       - unexpected value \"הסיסמה שגויה\"\u001b[22m\n",
+            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m\"\u001b[7mהדוא\\\"ל או \u001b[27mהסיסמה שגוי\u001b[7mים\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"הסיסמה שגוי\u001b[7mה\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    14 × locator resolved to <div id=\"error\" role=\"alert\">הסיסמה שגויה</div>\u001b[22m\n\u001b[2m       - unexpected value \"הסיסמה שגויה\"\u001b[22m\n\n    at /qa-repo/tests/e2e/login.spec.ts:58:35",
+            "location": {
+             "file": "/qa-repo/tests/e2e/login.spec.ts",
+             "column": 35,
+             "line": 58
+            },
+            "snippet": "  56 |     await loginPage.login(userFor('standard').username, 'Wrong-pass1');\n  57 |\n> 58 |     await expect(loginPage.error).toHaveText(INVALID_CREDENTIALS);\n     |                                   ^\n  59 |     await expect(page).toHaveURL(/\\/login$/);\n  60 |   });\n  61 |"
+           },
+           "errors": [
+            {
+             "location": {
+              "file": "/qa-repo/tests/e2e/login.spec.ts",
+              "column": 35,
+              "line": 58
+             },
+             "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('alert')\nExpected: \u001b[32m\"\u001b[7mהדוא\\\"ל או \u001b[27mהסיסמה שגוי\u001b[7mים\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"הסיסמה שגוי\u001b[7mה\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    14 × locator resolved to <div id=\"error\" role=\"alert\">הסיסמה שגויה</div>\u001b[22m\n\u001b[2m       - unexpected value \"הסיסמה שגויה\"\u001b[22m\n\n\n  56 |     await loginPage.login(userFor('standard').username, 'Wrong-pass1');\n  57 |\n> 58 |     await expect(loginPage.error).toHaveText(INVALID_CREDENTIALS);\n     |                                   ^\n  59 |     await expect(page).toHaveURL(/\\/login$/);\n  60 |   });\n  61 |\n    at /qa-repo/tests/e2e/login.spec.ts:58:35"
+            }
+           ],
+           "stdout": [],
+           "stderr": [],
+           "retry": 0,
+           "startTime": "2026-10-18T12:56:27.790Z",
+           "annotations": [],
+           "attachments": [
+            {
+             "name": "screenshot",
+             "contentType": "image/png",
+             "path": "/qa-repo/test-results/login-Login-LOGIN-TC-007-w-f5d64-generic-credentials-message-chromium/test-failed-1.png"
+            },
+            {
+             "name": "error-context",
+             "contentType": "text/markdown",
+             "path": "/qa-repo/test-results/login-Login-LOGIN-TC-007-w-f5d64-generic-credentials-message-chromium/error-context.md"
+            },
+            {
+             "name": "trace",
+             "contentType": "application/zip",
+             "path": "/qa-repo/test-results/login-Login-LOGIN-TC-007-w-f5d64-generic-credentials-message-chromium/trace.zip"
+            }
+           ],
+           "errorLocation": {
+            "file": "/qa-repo/tests/e2e/login.spec.ts",
+            "column": 35,
+            "line": 58
+           }
+          }
+         ],
+         "status": "unexpected"
+        }
+       ],
+       "id": "41d3fd2474a19feb00a1-f43412f1dd16eeb4db7a",
+       "file": "login.spec.ts",
+       "line": 55,
+       "column": 7
+      },
+      {
+       "title": "LOGIN-TC-008: unknown email shows the same generic credentials message",
+       "ok": true,
+       "tags": [],
+       "tests": [
+        {
+         "timeout": 30000,
+         "annotations": [],
+         "expectedStatus": "passed",
+         "projectId": "chromium",
+         "projectName": "chromium",
+         "results": [
+          {
+           "workerIndex": 5,
+           "parallelIndex": 5,
+           "status": "passed",
+           "duration": 170,
+           "errors": [],
+           "stdout": [],
+           "stderr": [],
+           "retry": 0,
+           "startTime": "2026-10-18T12:56:28.471Z",
+           "annotations": [],
+           "attachments": []
+          }
+         ],
+         "status": "expected"
+        }
+       ],
+       "id": "41d3fd2474a19feb00a1-be22fcefbda541fa0a76",
+       "file": "login.spec.ts",
+       "line": 62,
+       "column": 7
+      },
+      {
+       "title": "LOGIN-TC-010: show password toggles between visible and hidden",
+       "ok": true,
+       "tags": [],
+       "tests": [
+        {
+         "timeout": 30000,
+         "annotations": [],
+         "expectedStatus": "passed",
+         "projectId": "chromium",
+         "projectName": "chromium",
+         "results": [
+          {
+           "workerIndex": 3,
+           "parallelIndex": 3,
+           "status": "passed",
+           "duration": 171,
+           "errors": [],
+           "stdout": [],
+           "stderr": [],
+           "retry": 0,
+           "startTime": "2026-10-18T12:56:28.471Z",
+           "annotations": [],
+           "attachments": []
+          }
+         ],
+         "status": "expected"
+        }
+       ],
+       "id": "41d3fd2474a19feb00a1-6ba6d8c09fb133814a28",
+       "file": "login.spec.ts",
+       "line": 68,
+       "column": 7
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "errors": [],
+ "stats": {
+  "startTime": "2026-10-18T12:56:27.528Z",
+  "duration": 5964.985,
+  "expected": 8,
+  "skipped": 0,
+  "unexpected": 1,
+  "flaky": 0
+ }
+}

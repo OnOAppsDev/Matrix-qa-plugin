@@ -1,0 +1,16 @@
+{
+  "name": "matrix-qa-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Development scripts for the matrix-qa-plugin Claude Code plugin. The plugin itself has no runtime dependencies.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "test": "node --test scripts/test/",
+    "validate": "node scripts/validate-plugin.mjs",
+    "e2e": "node scripts/e2e-example.mjs",
+    "check": "node scripts/validate-plugin.mjs && node --test scripts/test/"
+  }
+}
